@@ -21,4 +21,5 @@ import manager.views as manager_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('task_list/', manager_view.TaskListView.as_view()),
+    path('task_add/', manager_view.add, name='forms'),
 ]
